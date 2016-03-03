@@ -1,0 +1,19 @@
+{
+  "name": "stream-res",
+  "version": "0.0.0",
+  "description": "Pipe a stream to an HTTP response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "htps://github.com/SamyPesse/stream-res.git"
+  },
+  "author": "Samy Pesse <samypesse@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "destroy": "^1.0.4",
+    "finished": "^1.2.2"
+  }
+}
