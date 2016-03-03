@@ -1,4 +1,4 @@
-# stream-res
+# stream-res [![Build Status](https://travis-ci.org/SamyPesse/stream-res.svg?branch=master)](https://travis-ci.org/SamyPesse/stream-res)
 
 > Pipe a stream to an HTTP response
 
