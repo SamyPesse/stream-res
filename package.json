@@ -1,6 +1,6 @@
 {
   "name": "stream-res",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pipe a stream to an HTTP response",
   "main": "index.js",
   "scripts": {
