@@ -5,7 +5,7 @@ var destroy = require('destroy');
 function streamRes(res, file, callback) {
     var finished = false;
 
-    function onFinished(err) {
+    function onResFinished(err) {
         finished = true;
         destroy(file);
     }
@@ -28,14 +28,13 @@ function streamRes(res, file, callback) {
     // Pipe the file to the HTTP reponse
     function onOpen() {
         file.pipe(res);
-    }
 
-    onFinished(res, onFinished);
+        onFinished(res, onResFinished);
+    }
 
     // Listen on error/end
     file.on('error', onError);
     file.on('end', onEnd);
-
 
     if (file instanceof fs.ReadStream) {
         if (file.fd) onOpen();
